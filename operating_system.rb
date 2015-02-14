@@ -3,16 +3,15 @@ module OperatingSystem
   require 'rbconfig'
 
   module_function
+  
   def operating_system
     case RbConfig::CONFIG['host_os']
-      when /linux/i
-        :linux
-      when /cygwin|mswin|mingw|windows/i
+      when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
         :windows
-      when /darwin/i
-        :mac
-      when /solaris/i
-        :solaris
+      when /darwin|mac os/
+        :macosx
+      when /linux/
+        :linux
       else
         nil
     end
@@ -20,6 +19,6 @@ module OperatingSystem
 
   def linux?;   operating_system == :linux;   end
   def windows?; operating_system == :windows; end
-  def mac?;     operating_system == :mac;     end
+  def mac?;     operating_system == :macox;     end
 
 end

@@ -14,4 +14,7 @@ def speak(text)
   end
 end
 
-speak 'This is an example of speech synthesis.'
+ARGV.each do|a|
+  speak a
+end 
+#speak 'This is an example of speech synthesis.'
