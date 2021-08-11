@@ -6,4 +6,6 @@ If you are using *Windows*, uncomment the gem in the gemfile, if using *linux* m
 
 :hammer: I have tested this with Ruby 3.01 and it works fine.
 
+USAGE: ruby speak.rb "text you wish to be spoken"
+
 HAVE FUN! 
