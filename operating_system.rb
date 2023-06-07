@@ -19,6 +19,6 @@ module OperatingSystem
 
   def linux?;   operating_system == :linux;   end
   def windows?; operating_system == :windows; end
-  def mac?;     operating_system == :macox;     end
+  def mac?;     operating_system == :macox;   end
 
 end
